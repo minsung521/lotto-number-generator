@@ -1,0 +1,32 @@
+.process-container {
+	position: absolute;
+	top: 24%;
+	left: 25%;
+	height: 70%;
+	width: 50%;
+	background-color: #2f2f2e;
+	border-radius: 30px;
+}
+.indicator {
+	display: flex;
+	justify-content: space-evenly;
+	height: 72%;
+	width: 100%;
+	/* border: green 1px solid; */
+}
+.btns {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 4%;
+}
+.btn {
+	background-color: #0066ff;
+	height: 60px;
+	width: 40%;
+	border-radius: 24px;
+	border: none;
+	font-size: 32px;
+}
+.btn:active {
+	background-color: #227aff;
+}

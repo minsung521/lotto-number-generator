@@ -12,15 +12,10 @@ body {
 }
 h1 {
 	position: absolute;
+	left: 42%;
 	margin-left: auto;
 	margin-right: auto;
-	left: 0;
 	top: 4%;
-}
-.process-container {
-	position: absolute;
-	top: 20%;
-	height: 70px;
-	width: 50px;
-	background-color: aliceblue;
+	color: white;
+	font-size: 40px;
 }
