@@ -10,34 +10,50 @@ const ProcessContainer = () => {
 		numbers: [],
 	});
 	let dum = [];
+	let CountArr = [];
+	let result = [];
+	let max = 1;
 
 	const Shuffle = () => {
 		//console.log(lotto[1][1]);
-		startpoint = Math.floor(Math.random() * 888 + 1);
+		startpoint = Math.floor(Math.random() * 588 + 1);
 	};
 
 	const ManyNum = () => {
 		setBestNum({ numbers: [] });
 		for (let j = 1; j <= 6; j++) {
-			let CountArr = [];
-			for (let i = startpoint; i < startpoint + 100; i++) {
+			CountArr = [];
+			result = [0];
+			max = 0;
+
+			for (let i = startpoint; i < startpoint + 400; i++) {
 				CountArr.push(lotto[i][j]);
+				// console.log(lotto[i]);
 			}
 			// console.log(CountArr);
-			let result = {};
 			CountArr.forEach((x) => {
 				result[x] = (result[x] || 0) + 1;
 			});
 			// console.log(result);
-			let max = 0;
-			for (let i = 1; i <= 45; i++) {
-				if (result[i] && !dum.includes(result[i]))
-					max = max < result[i] ? result[i] : max;
+
+			for (let k = 1; k <= 45; k++) {
+				if (result[k]) {
+					// console.log(!dum.includes(k));
+					// console.log(result[max]);
+					if (result[max] <= result[k]) max = !dum.includes(k) ? k : max;
+					// console.log("big");
+					// if (!dum.includes(k)) {
+					// console.log("do not include");
+					// 	max = k;
+					// }
+					// max = result[max] <= result[k] ? k : max;
+					// console.log(max);
+				}
 			}
 			dum.push(max);
 		}
 		setBestNum({ numbers: [dum] });
-		console.log(BestNum.numbers);
+		// console.log(BestNum.numbers);
 	};
 
 	return (
