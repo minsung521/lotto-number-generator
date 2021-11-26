@@ -58,10 +58,7 @@ const ProcessContainer = () => {
 			</div>
 			<p id="about-service">
 				위 <span id="point">로또 번호</span>는 1회 ~ 988회 까지의{" "}
-				<a
-					target="_blank"
-					href="https://dhlottery.co.kr/gameResult.do?method=byWin"
-				>
+				<a href="https://dhlottery.co.kr/gameResult.do?method=byWin">
 					나눔로또
 				</a>{" "}
 				당첨 데이터를 토대로 생성됩니다.
