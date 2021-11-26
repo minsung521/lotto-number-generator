@@ -1,6 +1,6 @@
 .process-container {
 	position: absolute;
-	top: 24%;
+	top: 20%;
 	left: 25%;
 	height: 70%;
 	width: 50%;
@@ -17,10 +17,11 @@
 .btns {
 	display: flex;
 	justify-content: space-evenly;
-	padding: 3.5% 4%;
+	padding: 2rem 2.4rem;
 }
 .btn {
 	background-color: #0066ff;
+	color: #252525;
 	height: 60px;
 	width: 40%;
 	border-radius: 24px;
@@ -30,10 +31,12 @@
 .btn:active {
 	background-color: #227aff;
 }
-#about-service {
+.process-container #about-service {
 	color: rgba(255, 255, 255, 0.3);
 	text-align: center;
 	padding-bottom: 5em;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 #point {
 	color: #247cffc7;

@@ -6,7 +6,9 @@ const App = () => {
 	return (
 		<div className="App">
 			<img src={BackGround} className="App-background" alt="" />
-			<h1>로또 번호 생성기</h1>
+			<div className="title-container">
+				<h1>로또 번호 생성기</h1>
+			</div>
 			<ProcessContainer />
 			<p id="about-service">
 				Copyleft © mingsung. All rights doesn't reserved.
