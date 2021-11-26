@@ -17,7 +17,7 @@
 .btns {
 	display: flex;
 	justify-content: space-evenly;
-	padding: 4%;
+	padding: 3.5% 4%;
 }
 .btn {
 	background-color: #0066ff;
@@ -29,4 +29,16 @@
 }
 .btn:active {
 	background-color: #227aff;
+}
+#about-service {
+	color: rgba(255, 255, 255, 0.3);
+	text-align: center;
+	padding-bottom: 5em;
+}
+#point {
+	color: #247cffc7;
+}
+a {
+	text-decoration: none;
+	color: #f46d00;
 }

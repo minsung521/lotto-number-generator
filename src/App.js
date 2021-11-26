@@ -8,6 +8,9 @@ const App = () => {
 			<img src={BackGround} className="App-background" alt="" />
 			<h1>로또 번호 생성기</h1>
 			<ProcessContainer />
+			<p id="about-service">
+				Copyleft © mingsung. All rights doesn't reserved.
+			</p>
 		</div>
 	);
 };

@@ -46,7 +46,7 @@ const ProcessContainer = () => {
 				{/* {BestNum.numbers.map((cur, i) => {
 					return <NumBox number={`${cur}`} />;
 				})} */}
-				<NumBox number={`${BestNum.numbers[0]}`} />
+				<NumBox number={`${BestNum.numbers[0] || "번호 뽑기"}`} />
 			</div>
 			<div className="btns">
 				<button className="btn" onClick={Shuffle}>
@@ -56,6 +56,16 @@ const ProcessContainer = () => {
 					뽑기
 				</button>
 			</div>
+			<p id="about-service">
+				위 <span id="point">로또 번호</span>는 1회 ~ 988회 까지의{" "}
+				<a
+					target="_blank"
+					href="https://dhlottery.co.kr/gameResult.do?method=byWin"
+				>
+					나눔로또
+				</a>{" "}
+				당첨 데이터를 토대로 생성됩니다.
+			</p>
 		</div>
 	);
 };

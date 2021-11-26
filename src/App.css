@@ -19,3 +19,8 @@ h1 {
 	color: white;
 	font-size: 40px;
 }
+#about-service {
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	padding-bottom: 5em;
+}
