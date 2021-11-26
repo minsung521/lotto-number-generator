@@ -13,7 +13,8 @@ const ProcessContainer = () => {
 
 	const Shuffle = () => {
 		//console.log(lotto[1][1]);
-		startpoint = Math.floor(Math.random() * 588 + 1);
+		startpoint = Math.floor(Math.random() * 788 + 1);
+		console.log(startpoint);
 	};
 
 	const ManyNum = () => {
@@ -23,7 +24,7 @@ const ProcessContainer = () => {
 			let result = [0];
 			let max = 0;
 
-			for (let i = startpoint; i < startpoint + 400; i++) {
+			for (let i = startpoint; i < startpoint + 100; i++) {
 				CountArr.push(lotto[i][j]);
 				// console.log(lotto[i]);
 			}
