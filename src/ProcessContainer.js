@@ -6,6 +6,7 @@ import NumBox from "./Numbox";
 const ProcessContainer = () => {
 	//1~880
 	let startpoint = 1;
+	let startpoint2 = 1;
 	const [BestNum, setBestNum] = useState({
 		numbers: [],
 	});
@@ -13,7 +14,8 @@ const ProcessContainer = () => {
 
 	const Shuffle = () => {
 		//console.log(lotto[1][1]);
-		startpoint = Math.floor(Math.random() * 888 + 1);
+		startpoint = Math.floor(Math.random() * 938 + 1);
+		startpoint2 = Math.floor(Math.random() * 938 + 1);
 		console.log(startpoint);
 	};
 
@@ -24,10 +26,13 @@ const ProcessContainer = () => {
 			let result = [0];
 			let max = 0;
 
-			for (let i = startpoint; i < startpoint + 100; i++) {
+			for (let i = startpoint; i < startpoint + 50; i++) {
 				CountArr.push(lotto[i][j]);
-				// console.log(lotto[i]);
 			}
+			for (let i = startpoint2; i < startpoint2 + 50; i++) {
+				CountArr.push(lotto[i][j]);
+			}
+			// console.log(lotto[i]);
 			// console.log(CountArr);
 			CountArr.forEach((x) => {
 				result[x] = (result[x] || 0) + 1;
