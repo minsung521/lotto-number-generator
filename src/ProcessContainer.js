@@ -13,7 +13,7 @@ const ProcessContainer = () => {
 
 	const Shuffle = () => {
 		//console.log(lotto[1][1]);
-		startpoint = Math.floor(Math.random() * 788 + 1);
+		startpoint = Math.floor(Math.random() * 888 + 1);
 		console.log(startpoint);
 	};
 
