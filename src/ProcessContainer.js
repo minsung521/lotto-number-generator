@@ -10,9 +10,6 @@ const ProcessContainer = () => {
 		numbers: [],
 	});
 	let dum = [];
-	let CountArr = [];
-	let result = [];
-	let max = 1;
 
 	const Shuffle = () => {
 		//console.log(lotto[1][1]);
@@ -22,9 +19,9 @@ const ProcessContainer = () => {
 	const ManyNum = () => {
 		setBestNum({ numbers: [] });
 		for (let j = 1; j <= 6; j++) {
-			CountArr = [];
-			result = [0];
-			max = 0;
+			let CountArr = [];
+			let result = [0];
+			let max = 0;
 
 			for (let i = startpoint; i < startpoint + 400; i++) {
 				CountArr.push(lotto[i][j]);
