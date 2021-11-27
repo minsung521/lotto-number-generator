@@ -10,7 +10,7 @@ const App = () => {
 				<h1>로또 번호 생성기</h1>
 			</div>
 			<ProcessContainer />
-			<p id="about-service">
+			<p id="about-service-license">
 				Copyleft © mingsung. All rights doesn't reserved.
 			</p>
 		</div>

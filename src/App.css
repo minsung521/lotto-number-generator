@@ -25,9 +25,18 @@ h1 {
 	color: white;
 	font-size: 40px;
 }
-.App #about-service {
+#about-service-license {
 	position: sticky;
 	color: rgba(255, 255, 255, 0.5);
 	text-align: center;
 	bottom: 2%;
+}
+
+@media (max-width: 900px) {
+	#about-service {
+		display: none;
+	}
+	#about-service-license {
+		display: none;
+	}
 }
